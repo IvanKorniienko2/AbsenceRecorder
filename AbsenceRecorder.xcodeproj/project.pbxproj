@@ -135,6 +135,8 @@
 		4396BF92297CA357008380AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4396BF96297CA483008380AC /* Student.swift */,
+				4396BF98297CA579008380AC /* Division.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,8 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				4396BF6A297C9D20008380AC /* ContentView.swift */,
-				4396BF96297CA483008380AC /* Student.swift */,
-				4396BF98297CA579008380AC /* Division.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -10,7 +10,7 @@ import Foundation
 
 class Division {
     let code: String
-    var student: [Student] = []
+    var students: [Student] = []
     
     init(code: String) {
         self.code = code
