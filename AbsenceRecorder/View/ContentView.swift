@@ -11,7 +11,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text()
+        VStack {
+            Form {
+                Text("")
+            }
+        }
             .padding()
     }
 }
