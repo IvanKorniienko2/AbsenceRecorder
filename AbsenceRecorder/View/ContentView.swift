@@ -10,18 +10,16 @@ import SwiftUI
 
 
 struct ContentView: View {
+    var division: [Division]
+    
+    
     var body: some View {
-        VStack {
-            Form {
-                Text("")
-            }
-        }
-            .padding()
+        Text("Code: \(division[0].code)")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(division: Division.examples)
     }
 }

@@ -22,14 +22,9 @@ class Division {
         
         //loop as many times as parameters size says to create students and add them to the students property
         for i in 1 ... size {
-            let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            let day = Int.random(in: 1 ... 31)
-            let month = Int.random(in: 1 ... 12)
-            let year = Int.random(in: 2005 ... 2010)
-            let date = "\(day).\(month).\(year)"
             
             
-            let student = Student(forename: "\(i)", surname: "\(alphabet.randomElement()!)", birthday: "\(date)")
+            let student = Student(forename: "forename \(i)", surname: "surname \(i)", birthday: Date())
             division.students.append(student)
         }
             
@@ -43,7 +38,7 @@ class Division {
                            Division.createDivision(code: "vE5-1", of: 16),
                            Division.createDivision(code: "vD1-1", of: 14)]
     
-    
+
     
     #endif
     
