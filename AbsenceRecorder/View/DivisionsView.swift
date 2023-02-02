@@ -17,7 +17,7 @@ struct DivisionsView: View {
     var body: some View {
         NavigationView {
             List(state.divisions, id: \.self.code) { division in
-                NavigationLink(destination: AbsenceView(division: division)) {
+                NavigationLink(destination: AbsenceView(absence: Absence(date: Date(), students: division.students))) {
                 DivisionItem(division: division)
                 }
             }
@@ -40,7 +40,7 @@ struct DivisionsView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DivisionsView()
+        DivisionsView(divisions: Division.examples)
             .environmentObject(StateController())
     }
 }

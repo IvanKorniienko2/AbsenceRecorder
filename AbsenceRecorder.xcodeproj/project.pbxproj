@@ -22,6 +22,10 @@
 		4396BF86297C9D23008380AC /* AbsenceRecorderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396BF85297C9D23008380AC /* AbsenceRecorderUITestsLaunchTests.swift */; };
 		4396BF97297CA483008380AC /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396BF96297CA483008380AC /* Student.swift */; };
 		4396BF99297CA579008380AC /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396BF98297CA579008380AC /* Division.swift */; };
+		43B8E98A298C614D00B9085A /* AbsenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8E989298C614D00B9085A /* AbsenceItem.swift */; };
+		43B8E98C298C638A00B9085A /* StudentAbsence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8E98B298C638A00B9085A /* StudentAbsence.swift */; };
+		43B8E98E298C661A00B9085A /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8E98D298C661A00B9085A /* Absence.swift */; };
+		43B8E990298C69D000B9085A /* DivisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8E98F298C69D000B9085A /* DivisionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		4396BF85297C9D23008380AC /* AbsenceRecorderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceRecorderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4396BF96297CA483008380AC /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		4396BF98297CA579008380AC /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
+		43B8E989298C614D00B9085A /* AbsenceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceItem.swift; sourceTree = "<group>"; };
+		43B8E98B298C638A00B9085A /* StudentAbsence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAbsence.swift; sourceTree = "<group>"; };
+		43B8E98D298C661A00B9085A /* Absence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Absence.swift; sourceTree = "<group>"; };
+		43B8E98F298C69D000B9085A /* DivisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +130,6 @@
 				4396BF93297CA3A1008380AC /* View */,
 				4396BF92297CA357008380AC /* Model */,
 				4396BF68297C9D20008380AC /* AbsenceRecorderApp.swift */,
-				433FA397298C4D16004C0652 /* StateController.swift */,
 				4396BF6E297C9D23008380AC /* Preview Content */,
 				4396BF6C297C9D23008380AC /* Assets.xcassets */,
 			);
@@ -132,6 +139,7 @@
 		4396BF6E297C9D23008380AC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				433FA397298C4D16004C0652 /* StateController.swift */,
 				4396BF6F297C9D23008380AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -141,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				4396BF79297C9D23008380AC /* AbsenceRecorderTests.swift */,
+				43B8E98F298C69D000B9085A /* DivisionTests.swift */,
 			);
 			path = AbsenceRecorderTests;
 			sourceTree = "<group>";
@@ -159,6 +168,8 @@
 			children = (
 				4396BF96297CA483008380AC /* Student.swift */,
 				4396BF98297CA579008380AC /* Division.swift */,
+				43B8E98B298C638A00B9085A /* StudentAbsence.swift */,
+				43B8E98D298C661A00B9085A /* Absence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 				433FA393298C49CA004C0652 /* AbsenceView.swift */,
 				433FA395298C4AB1004C0652 /* RootTabView.swift */,
 				433FA399298C4E9E004C0652 /* StatisticsView.swift */,
+				43B8E989298C614D00B9085A /* AbsenceItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,12 +320,15 @@
 				4396BF6B297C9D20008380AC /* DivisionsView.swift in Sources */,
 				433FA39A298C4E9E004C0652 /* StatisticsView.swift in Sources */,
 				43524D9D2989CAA200A3D060 /* Date.swift in Sources */,
+				43B8E98C298C638A00B9085A /* StudentAbsence.swift in Sources */,
 				433FA396298C4AB1004C0652 /* RootTabView.swift in Sources */,
+				43B8E98A298C614D00B9085A /* AbsenceItem.swift in Sources */,
 				4396BF97297CA483008380AC /* Student.swift in Sources */,
 				433FA398298C4D16004C0652 /* StateController.swift in Sources */,
 				4396BF99297CA579008380AC /* Division.swift in Sources */,
 				4396BF69297C9D20008380AC /* AbsenceRecorderApp.swift in Sources */,
 				43524D9F2989CF2800A3D060 /* DivisionItem.swift in Sources */,
+				43B8E98E298C661A00B9085A /* Absence.swift in Sources */,
 				433FA394298C49CA004C0652 /* AbsenceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B8E990298C69D000B9085A /* DivisionTests.swift in Sources */,
 				4396BF7A297C9D23008380AC /* AbsenceRecorderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

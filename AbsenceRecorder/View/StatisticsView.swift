@@ -12,7 +12,7 @@ struct StatisticsView: View {
     @EnvironmentObject var state: StateController
     
     var body: some View {
-        Text("Statistics View")
+        Text("Statistics: \(state.divisions[0].code)")
     }
     
 }
