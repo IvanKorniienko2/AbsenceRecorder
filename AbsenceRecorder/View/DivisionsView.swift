@@ -17,7 +17,7 @@ struct DivisionsView: View {
     var body: some View {
         NavigationView {
             List(state.divisions, id: \.self.code) { division in
-                NavigationLink(destination: AbsenceView(absence: Absence(date: Date(), students: division.students))) {
+                NavigationLink(destination: AbsenceView(absence: division.createAbsenceOrGetExistingIfAvailable(for: currentDate))) {
                 DivisionItem(division: division)
                 }
             }

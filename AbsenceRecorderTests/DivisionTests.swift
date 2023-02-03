@@ -6,16 +6,58 @@
 //
 
 import XCTest
+@testable import AbsenceRecorder
 
 class DivisionTests: XCTestCase {
 
 
-    func testGetAbsenceDivisionWithAbsenceOnThatDayReturns() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testGetAbsenceDivisionWithAbsenceOnThatDayReturnsAbsence() throws {
+        //arrange
+        let division = Division(code: "TestDiv")
+        let dateToday = Date()
+        let absence = Absence(date: dateToday, students: Student.examples)
+        division.absences.append(absence)
+
+        //act
+        let actual = division.getAbsence(for: dateToday)
+
+        //assert
+        XCTAssertNotNil(actual)
+
+    }
+    func testGetAbsenceDivisionWithAbsenceOnLaterDayReturnsAbsence() throws {
+        //arrange
+        let division = Division(code: "TestDiv")
+        let dateLaterToday = Date(timeIntervalSinceNow: 10000000000000000000)
+        let absence = Absence(date: dateLaterToday, students: Student.examples)
+        division.absences.append(absence)
+
+        //act
+        let actual = division.getAbsence(for: dateLaterToday)
+
+        //assert
+        XCTAssertNotNil(actual)
+
+    }
+    func testGetAbsenceDivisionWithAbsenceOnTomorrowDayReturnsAbsence() throws {
+        //arrange
+        let division = Division(code: "TestDiv")
+        let dateToday = Date()
+        let tomorrowToday = Date(timeIntervalSinceNow: 1000000000000000000000000000)
+        let absence1 = Absence(date: dateToday, students: Student.examples)
+        let absence2 = Absence(date: tomorrowToday, students: Student.examples)
+        division.absences.append(absence1)
+        division.absences.append(absence2)
+        
+        //act
+        let actual = division.getAbsence(for: tomorrowToday)
+        
+        //assert
+        XCTAssertNotNil(actual)
+        if let actualNotNil = actual {
+            XCTAssertEqual(actualNotNil.takenOn, absence2.takenOn)
+        }
+        
     }
 
 
