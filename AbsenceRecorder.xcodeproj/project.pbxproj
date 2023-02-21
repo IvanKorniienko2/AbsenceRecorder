@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433058DC29A57D6C0031AF67 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433058DB29A57D6C0031AF67 /* FileManager.swift */; };
 		433FA394298C49CA004C0652 /* AbsenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FA393298C49CA004C0652 /* AbsenceView.swift */; };
 		433FA396298C4AB1004C0652 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FA395298C4AB1004C0652 /* RootTabView.swift */; };
 		433FA398298C4D16004C0652 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FA397298C4D16004C0652 /* StateController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		433058DB29A57D6C0031AF67 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		433FA393298C49CA004C0652 /* AbsenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceView.swift; sourceTree = "<group>"; };
 		433FA395298C4AB1004C0652 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		433FA397298C4D16004C0652 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				43524D9C2989CAA200A3D060 /* Date.swift */,
+				433058DB29A57D6C0031AF67 /* FileManager.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				4396BF6B297C9D20008380AC /* DivisionsView.swift in Sources */,
 				433FA39A298C4E9E004C0652 /* StatisticsView.swift in Sources */,
 				43524D9D2989CAA200A3D060 /* Date.swift in Sources */,
+				433058DC29A57D6C0031AF67 /* FileManager.swift in Sources */,
 				43B8E98C298C638A00B9085A /* StudentAbsence.swift in Sources */,
 				433FA396298C4AB1004C0652 /* RootTabView.swift in Sources */,
 				43B8E98A298C614D00B9085A /* AbsenceItem.swift in Sources */,
